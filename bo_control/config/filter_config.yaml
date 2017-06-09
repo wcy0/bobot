@@ -1,0 +1,11 @@
+scan_filter_chain:
+- name: range
+  type: LaserScanRangeFilter
+  params:
+    lower_threshold: 0.4
+    upper_threshold: 6
+- name: angle
+  type: LaserScanAngularBoundsFilterInPlace
+  params:
+    lower_angle: -3.14
+    upper_angle: 0.0
